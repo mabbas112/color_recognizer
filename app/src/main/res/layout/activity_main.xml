@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="318dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/cartoon"
+        app:layout_constraintBottom_toTopOf="@+id/randomColorPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/randomColorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Text will here"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="onPinkBtn"
+        android:text="pink"
+        app:backgroundTint="#FA07E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toEndOf="@+id/purple"
+        app:layout_constraintTop_toBottomOf="@+id/black"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <Button
+        android:id="@+id/purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:onClick="onPurpleBtn"
+        android:text="Purple"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <Button
+        android:id="@+id/brown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:onClick="onBrownBtn"
+        android:text="Brown"
+        app:backgroundTint="#7C4700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/pink"
+        app:layout_constraintTop_toBottomOf="@+id/randomColorPicker"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        android:onClick="onYellowBtn"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomColorPicker"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:onClick="onRedBtn"
+        app:backgroundTint="#FA0404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomColorPicker"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:onClick="onGreenBtn"
+        app:backgroundTint="#1AA820"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/randomColorPicker"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:onClick="onBlueBtn"
+        android:text="Blue"
+        app:backgroundTint="#1324BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Black"
+        android:onClick="onBlackBtn"
+        app:backgroundTint="#090808"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orange"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/blue"
+        app:layout_constraintTop_toBottomOf="@+id/green"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="onOrangeBtn"
+        android:text="Orange"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toEndOf="@+id/blue"
+        app:layout_constraintTop_toBottomOf="@+id/yellow"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
